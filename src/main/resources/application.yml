@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@59.21.132.215:51521/LSMS
+    username: NLEC
+    password: nlec_real
