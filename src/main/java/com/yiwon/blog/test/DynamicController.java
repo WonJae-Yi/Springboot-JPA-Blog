@@ -21,14 +21,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.yiwon.blog.model.RoleType;
 import com.yiwon.blog.model.Users;
-import com.yiwon.blog.repository.UserRepositoty;
+import com.yiwon.blog.repository.UserRepository;
 
 @Transactional
 @RestController
 public class DynamicController {
 	
 	@Autowired  //의존성 주입(DI)
-	private UserRepositoty userRepository;
+	private UserRepository userRepository;
 	
 	@DeleteMapping("/dummy/user/{id}")
 	public String delete(@PathVariable int id) {
